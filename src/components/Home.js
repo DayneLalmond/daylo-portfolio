@@ -1,21 +1,19 @@
 import React from 'react';
 import '../styles/Nav.css';
-import logo from '../styles/palm_trees.png';
 
 function Home() {
   return (
     <div>
       <div>
-        <img src={logo} alt="Logo" width="120px" />
-        <h1 className="text-4xl font-bold">
-          ALOHA, I'M DAYNE
+        <h1 className="text-4xl font-bold" id="home-text">
+          Aloha, I'm Dayne
         </h1>
       </div>
-      <pre>
-        <code>
-          <i class="material-icons">work_history</i>My pre-formatted "quoted" code here.
+      {/* <pre>
+        <code className="example-code">
+          &lt;script src="./developer/daynelalmond.js"&#62;&lt;/script&#62;
         </code>
-      </pre>
+      </pre> */}
     </div>
   );
 }

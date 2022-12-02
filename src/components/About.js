@@ -3,7 +3,9 @@ import '../styles/Nav.css';
 
 function About() {
   return (
-    <h1>About</h1>
+    <div>
+    <h1 className="text-4xl font-bold" id="about-text">EXPLORE MY BACKGROUND</h1>
+    </div>
   );
 }
 

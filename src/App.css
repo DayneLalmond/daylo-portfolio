@@ -2,15 +2,33 @@
 @tailwind components;
 @tailwind utilities;
 
-
 html {
-    background: #EDE6E3;
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+    height: 300vh;
+}
+
+body {
+    background: #DEE7E7;
 }
 
 .navbar {
+    position: fixed;
     display: flex;
-    background: coral;
-    margin-top: 24px;
+    width: 100%;
+    opacity: 1;
+    background: #F4FAFF;
+    color: #353535;
+    box-shadow: 0px 0px 8px 2px #353535;
+    transition: all 0.4s ease-in-out;
+}
+
+.navbar:hover {
+    opacity: 1;
+}
+
+#home {
+    margin-left: 60px;
 }
 
 #home,
@@ -19,9 +37,9 @@ html {
 #projects {
     font-family: 'JetBrains Mono', monospace;
     font-size: 16px;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+    /* margin-left: auto;
+    margin-right: auto; */
+    padding: 1%;
     transition: all 0.2s ease-in-out;
 }
 
@@ -29,7 +47,11 @@ html {
 #about:hover,
 #contact:hover,
 #projects:hover {
-    transform: translate(0px, 20%);
+    transform: translate(0%, 4%);
     font-weight: bolder;
-    color: #F06449;
+    scale: 1.1;
+}
+
+img {
+    margin-left: 45%;
 }

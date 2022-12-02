@@ -1,9 +1,12 @@
 import React from 'react';
 import '../styles/Nav.css';
 
+
 function Projects() {
   return (
-    <h1>Projects</h1>
+    <div>
+      <h1 className="text-4xl font-bold" id="projects-text">Explore my creativity</h1>
+    </div>
   );
 }
 
