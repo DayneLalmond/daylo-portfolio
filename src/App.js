@@ -11,7 +11,7 @@ function App() {
   return (
     <>
       <BrowserRouter>
-        <header className='navbar'>
+        <header>
           <NavLink to="/" id='home'>Home</NavLink>
           <NavLink to="/projects" id='projects'>Projects</NavLink>
           <NavLink to="/contact" id='contact'>Contact</NavLink>

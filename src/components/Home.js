@@ -1,19 +1,16 @@
 import React from 'react';
 import '../styles/Nav.css';
+import Palm from '../images/palm_trees.png';
 
 function Home() {
   return (
     <div>
       <div>
-        <h1 className="text-4xl font-bold" id="home-text">
+        <h1 id="home-text">
           Aloha, I'm Dayne
         </h1>
+        <img src={Palm} id="palm" alt="palm tree" width="100px"/>
       </div>
-      {/* <pre>
-        <code className="example-code">
-          &lt;script src="./developer/daynelalmond.js"&#62;&lt;/script&#62;
-        </code>
-      </pre> */}
     </div>
   );
 }

@@ -1,8 +1,81 @@
 h1 {
     display: block;
-    padding-top: 10%;
-    padding-bottom: 10%;
+    padding-top: 8%;
+    padding-bottom: 4%;
     text-align: center;
     font-family: 'Permanent Marker', cursive;
     text-shadow: -4px 6px #C9CEBD;
   }
+
+#palm {
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  margin-block: -14%;
+}
+
+.container {
+  padding: 20px 5%;
+  margin-right: 40px;
+}
+
+ul {
+  list-style: none;
+}
+
+/* Responsive image gallery rules begin*/
+
+.image-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 60px;
+}
+
+.image-gallery > li {
+  flex-basis: 300px; /*width: 300px;*/
+  cursor: pointer;
+}
+
+.image-gallery::after {
+  content: "";
+  flex-basis: 300px;
+}
+
+.image-gallery li img {
+  box-shadow: 0px 0px 4px 2px hsl(0, 0%, 90%);
+  object-fit: cover;
+  max-width: 100%;
+  height: auto;
+  vertical-align: middle;
+}
+
+.overlay {
+  width: 100%;
+  height: auto;
+  padding: 4%;
+  box-shadow: 0px 0px 1px 1px hsl(0, 0%, 90%);
+  border-radius: 8px;
+  transition: all 0.2s ease-in-out;
+}
+
+.title {
+  font-family: 'JetBrains Mono', monospace;
+  font-weight: bolder;
+  align-items: center;
+  text-align: center;
+  line-height: 5vh;
+}
+
+.description {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  text-align: left;
+  justify-content: center;
+}
+
+/* hover */
+.image-gallery li:hover .overlay {
+  box-shadow: 0px 0px 10px 2px hsl(0, 0%, 90%);
+}
