@@ -5,6 +5,7 @@ import './App.css';
 import Home from './components/Home';
 import Projects from './components/Projects';
 import Contact from './components/Contact';
+import Palm from './images/palm_trees.png';
 
 function App() {
 
@@ -15,6 +16,8 @@ function App() {
           <NavLink to="/" id='home'>Home</NavLink>
           <NavLink to="/projects" id='projects'>Projects</NavLink>
           <NavLink to="/contact" id='contact'>Contact</NavLink>
+          <h1>Dayne Lalmond</h1>
+          <img src={Palm} id="palm" alt="palm tree" />
         </header>
         <Routes>
           <Route exact path="/" element={<Home />} />

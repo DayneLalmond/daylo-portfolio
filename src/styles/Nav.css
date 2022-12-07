@@ -1,17 +1,85 @@
-h1 {
+h2 {
     display: block;
     padding-top: 8%;
-    padding-bottom: 4%;
     text-align: center;
     font-family: 'Permanent Marker', cursive;
+    font-size: 32px;
     text-shadow: -4px 6px #C9CEBD;
+    cursor: default;
   }
 
-#palm {
-  display: flex;
-  margin-left: auto;
-  margin-right: auto;
-  margin-block: -14%;
+h3 {
+    display: block;
+    top: 42%;
+    left: 60%;
+    font-family: 'Montez', cursive;
+    font-size: 24px;
+    text-shadow: -4px 6px #C9CEBD;
+    cursor: default;
+  }
+
+h4 {
+    display: block;
+    text-align: center;
+    background: hsl(207, 100%, 100%);
+    box-shadow: 0px 0px 10px 2px hsl(0, 0%, 90%);
+    padding: 12px;
+    font-family: 'Permanent Marker', cursive;
+    font-size: large;
+    text-shadow: -2px 1px #C9CEBD;
+    border-radius: 5px;
+    cursor: default;
+    width: 50%;
+}
+
+.topics {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 14px;
+  margin-left: 10%;
+  padding-top: 4%;
+  line-height: 24px;
+  width: 80%;
+  cursor: default;
+}
+
+.first-p {
+  margin-right: 30%;
+  margin-left: 10%;
+  margin-bottom: 3%;
+}
+
+.second-p {
+  margin-right: 10%;
+  margin-left: 30%;
+  padding-bottom: 3%;
+}
+
+.bold {
+  color: hsl(167, 100%, 40%);
+  font-size: medium;
+}
+
+b {
+  font-size: larger;
+}
+
+#blog {
+  font-size: medium;
+}
+
+#blog:hover {
+  text-decoration: underline;
+}
+
+#about-me {
+    margin-right: 30%;
+    margin-left: 10%;
+}
+
+#dev-blog {
+  margin-top: 8%;
+  margin-left: 30%;
+  margin-right: 10%;
 }
 
 .container {
@@ -23,8 +91,6 @@ ul {
   list-style: none;
 }
 
-/* Responsive image gallery rules begin*/
-
 .image-gallery {
   display: flex;
   flex-wrap: wrap;
@@ -34,7 +100,7 @@ ul {
 
 .image-gallery > li {
   flex-basis: 300px; /*width: 300px;*/
-  cursor: pointer;
+  cursor: default;
 }
 
 .image-gallery::after {
@@ -54,28 +120,115 @@ ul {
   width: 100%;
   height: auto;
   padding: 4%;
+  background: hsl(207, 100%, 100%);
   box-shadow: 0px 0px 1px 1px hsl(0, 0%, 90%);
   border-radius: 8px;
   transition: all 0.2s ease-in-out;
 }
 
 .title {
-  font-family: 'JetBrains Mono', monospace;
+  font-family: 'Permanent Marker', cursive;
+  text-shadow: -2px 1px #C9CEBD;
   font-weight: bolder;
   align-items: center;
   text-align: center;
-  line-height: 5vh;
-}
-
-.description {
-  display: flex;
-  width: 100%;
-  align-items: center;
-  text-align: left;
   justify-content: center;
 }
 
-/* hover */
+.description {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 14px;
+  line-height: 24px;
+  text-align: center;
+}
+
 .image-gallery li:hover .overlay {
   box-shadow: 0px 0px 10px 2px hsl(0, 0%, 90%);
+}
+
+.icon-links {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.open-in-browser {
+  margin-left: 10%;
+  margin-right: 10%;
+  color: hsl(0, 0%, 20%);
+}
+
+.share {
+  margin-left: 10%;
+  margin-right: 10%;
+  color: hsl(0, 0%, 20%);
+}
+
+.open-in-browser:hover,
+.share:hover {
+  cursor: pointer;
+  color: hsl(200, 80%, 40%);
+}
+
+.open-in-browser:active,
+.share:active {
+  color: hsl(210, 100%, 50%);
+}
+
+#profile {
+  width: 12%;
+  border-radius: 12px;
+  box-shadow: 0px 0px 10px 2px hsl(0, 0%, 60%);
+}
+
+hr {
+  margin-top: -10%;
+  width: 41%;
+  border-top: 1px dotted black;
+  border-right: none;
+  border-left: none;
+  border-bottom: none;
+}
+
+.contact-info {
+  display: flex;
+  font-family: 'JetBrains Mono', monospace;
+  margin-top: 20px;
+  font-size: medium;
+  font-weight: bold;
+  transition: all 1s ease-in-out;
+}
+
+#email {
+  margin: 0 auto;
+}
+
+footer {
+  position: fixed;
+  opacity: 0.6;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 0px;
+  border-bottom: hsl(167, 100%, 40%) 10px solid;
+  text-align: left;
+  color: hsl(0, 0%, 20%);
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 14px;
+  background: hsl(207, 100%, 100%);
+  transition: all 0.2s ease-in-out;
+}
+
+footer:hover {
+  border-bottom:hsl(0, 0%, 20%) 10px solid;
+  background: transparent;
+  opacity: 1;
+  height: 40px;
+}
+
+.end-note {
+  font-weight: bolder;
+  font-size: larger;
+  margin-left: 8%;
 }
