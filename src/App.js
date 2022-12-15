@@ -1,24 +1,21 @@
 import React from 'react';
-import { BrowserRouter, Routes, Route, NavLink } from "react-router-dom";
+// import { useState } from 'react';
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 
-import './App.css';
-import Home from './components/Home';
-import Projects from './components/Projects';
-import Contact from './components/Contact';
-import Palm from './images/palm_trees.png';
+import './styles/App.css';
+import Header from './components/Header';
+import Footer from './components/Footer';
+import Home from './pages/Home';
+import Projects from './pages/Projects';
+import Contact from './pages/Contact';
 
-function App() {
+export default function App() {
 
   return (
     <>
       <BrowserRouter>
-        <header>
-          <NavLink to="/" id='home'>Home</NavLink>
-          <NavLink to="/projects" id='projects'>Projects</NavLink>
-          <NavLink to="/contact" id='contact'>Contact</NavLink>
-          <h1>Dayne Lalmond</h1>
-          <img src={Palm} id="palm" alt="palm tree" />
-        </header>
+      <Header></Header>
+      <Footer></Footer>
         <Routes>
           <Route exact path="/" element={<Home />} />
           <Route exact path="/projects" element={<Projects />} />
@@ -28,5 +25,3 @@ function App() {
     </>
   );
 }
-
-export default App;
