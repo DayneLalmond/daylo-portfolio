@@ -13,7 +13,6 @@ function Header() {
             <NavLink to="/contact" id='contact'>Contact</NavLink>
             <h1>Dayne Lalmond</h1>
             <img src={Palm} id="palm" alt="palm tree" />
-
         </header>
     );
 }

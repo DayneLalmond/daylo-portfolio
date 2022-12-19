@@ -5,6 +5,7 @@ import scheduler from '../images/scheduler.JPG';
 import calendar from '../images/calendar.png';
 import quiz from '../images/quiz.png';
 import student from '../images/student.png';
+import cc from '../images/cc.png';
 
 function Projects() {
 
@@ -77,9 +78,13 @@ function Projects() {
           </li>
           <li>
             <div className="overlay">
+            <img src={cc} alt="cc" />
               <p className="title">{title[5]}</p>
-              <p className="description">Coming Soon.. The Cookie Coder!</p>
+              <p className="description">Create a clipboard of code with an 
+              explaination. Save it to the database.</p>
               <div className="icon-links">
+              <i className="material-icons open-in-browser"><a rel="noreferrer" href="https://cookie-coder.herokuapp.com/" target="_blank">open_in_browser</a></i>
+              <i className="material-icons share"><a rel="noreferrer" href="https://github.com/DayneLalmond/cookie-coder" target="_blank">share</a></i>
               </div>
             </div>
           </li>
