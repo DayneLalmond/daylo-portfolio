@@ -6,23 +6,47 @@ html {
 
 body {
     background: hsl(207, 100%, 98%);
+    animation: load 1.2s ease-in;
+}
+
+@keyframes load {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+      }
 }
 
 ::selection {
     background: hsl(165, 100%, 80%);
 }
 
-header {
+header .dropped {
     position: fixed;
     display: flex;
-    width: 100%;
+    height: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    color: hsl(0, 0%, 20%);
+    transition: all 0.4s ease-in-out;
+}
+  
+header .called {
+    position: fixed;
+    display: flex;
+    height: 6vh;
     top: 0;
     left: 0;
     right: 0;
     background: hsl(207, 100%, 100%);
     color: hsl(0, 0%, 20%);
+    transition: all 0.4s ease-in-out;
+}
+
+header .called:hover {
     box-shadow: 0px 0px 4px 2px hsl(0, 0%, 90%);
-    transition: all 0.2s ease-in-out;
 }
 
 #palm {
@@ -35,14 +59,14 @@ header {
 }
 
 h1 {
-    font-family: 'Montez', cursive;
+    font-family: 'Permanent Marker', cursive;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
     margin-left: auto;
     margin-right: 8%;
-    margin-top: auto;
-    margin-bottom: auto;
+    margin-top: 1%;
+    margin-bottom: 0;
     font-size: x-large;
     color: hsl(0, 0%, 20%);
     cursor: default;
@@ -68,24 +92,60 @@ a:active {
     color: hsl(210, 100%, 50%);
 }
 
+#linked-in:hover {
+    text-decoration: underline;
+    color: hsl(210, 100%, 50%);
+}
+
+#linked-in:active {
+    color: black;
+}
+
 #home,
-#about,
-#contact,
-#projects {
+#blog {
     font-family: 'JetBrains Mono', monospace;
     font-size: 16px;
     text-decoration: none;
     margin-left: 1%;
-    /* margin-right: auto; center nav */ 
     padding: 1%;
     transition: all 0.2s ease-in-out;
 }
 
 #home:hover,
-#about:hover,
-#contact:hover,
-#projects:hover {
+#blog:hover {
     transform: translate(0%, 4%);
     font-weight: bolder;
     scale: 1.1;
 }
+
+#devBlog {
+    text-decoration: underline;
+}
+
+footer {
+    position: fixed;
+    opacity: 0.6;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 0px;
+    border-bottom: hsl(167, 100%, 40%) 12px solid;
+    text-align: left;
+    color: hsl(0, 0%, 20%);
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 14px;
+    transition: all 0.2s ease-in-out;
+  }
+  
+  footer:hover {
+    border-bottom:hsl(0, 0%, 20%) 12px solid;
+    opacity: 1;
+    height: 40px;
+  }
+  
+  .end-note {
+    font-weight: bolder;
+    font-size: larger;
+    margin-left: 8%;
+  }

@@ -1,3 +1,14 @@
+#profile {
+  position: absolute;
+  opacity: 0.6;
+  top: 24vh;
+  right: 6vh;
+  z-index: -1;
+  width: 24vh;
+  border-radius: 12px;
+  box-shadow: 0px 0px 10px 2px hsl(0, 0%, 60%);
+}
+
 h2 {
     display: block;
     padding-top: 8%;
@@ -9,27 +20,15 @@ h2 {
   }
 
 h3 {
-    display: block;
-    top: 42%;
-    left: 60%;
-    font-family: 'Montez', cursive;
-    font-size: 24px;
-    text-shadow: -4px 6px #C9CEBD;
-    cursor: default;
-  }
-
-h4 {
-    display: block;
-    text-align: center;
-    background: hsl(207, 100%, 100%);
-    box-shadow: 0px 0px 10px 2px hsl(0, 0%, 90%);
-    padding: 12px;
-    font-family: 'Permanent Marker', cursive;
-    font-size: large;
-    text-shadow: -2px 1px #C9CEBD;
-    border-radius: 5px;
-    cursor: default;
-    width: 50%;
+  display: block;
+  text-align: center;
+  padding: 16px;
+  font-family: 'Permanent Marker', cursive;
+  font-size: medium;
+  text-shadow: -2px 1px #C9CEBD;
+  border-radius: 5px;
+  cursor: default;
+  width: 50%;
 }
 
 .topics {
@@ -43,15 +42,24 @@ h4 {
 }
 
 .first-p {
+  text-indent: 20px;
   margin-right: 30%;
   margin-left: 10%;
   margin-bottom: 3%;
 }
 
 .second-p {
+  text-indent: 20px;
   margin-right: 10%;
   margin-left: 30%;
   padding-bottom: 3%;
+}
+
+.third-p {
+  text-indent: 20px;
+  margin-right: 30%;
+  margin-left: 10%;
+  padding-bottom: 5%;
 }
 
 .bold {
@@ -61,10 +69,6 @@ h4 {
 
 b {
   font-size: larger;
-}
-
-#blog {
-  font-size: medium;
 }
 
 #blog:hover {
@@ -80,6 +84,11 @@ b {
   margin-top: 8%;
   margin-left: 30%;
   margin-right: 10%;
+}
+
+#stay-connected {
+  margin-left: 10%;
+  width: 40%;
 }
 
 .container {
@@ -103,6 +112,10 @@ ul {
   cursor: default;
 }
 
+.image-gallery li:hover .overlay {
+  box-shadow: 0px 0px 10px 2px hsl(0, 0%, 90%);
+}
+
 .image-gallery::after {
   content: "";
   flex-basis: 300px;
@@ -121,9 +134,7 @@ ul {
   height: auto;
   padding: 4%;
   background: hsl(207, 100%, 100%);
-  box-shadow: 0px 0px 1px 1px hsl(0, 0%, 90%);
-  border-radius: 8px;
-  transition: all 0.2s ease-in-out;
+  transition: all 0.4s ease-in-out;
 }
 
 .title {
@@ -142,121 +153,50 @@ ul {
   text-align: center;
 }
 
-.image-gallery li:hover .overlay {
-  box-shadow: 0px 0px 10px 2px hsl(0, 0%, 90%);
-}
-
 .icon-links {
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-.open-in-browser {
-  margin-left: 10%;
-  margin-right: 10%;
+.open-in-browser, .terminal {
   color: hsl(0, 0%, 20%);
-}
-
-.share {
-  margin-left: 10%;
-  margin-right: 10%;
-  color: hsl(0, 0%, 20%);
+  transition: all 0.2s ease-in-out;
 }
 
 .open-in-browser:hover,
-.share:hover {
+.terminal:hover {
+  scale: 1.2;
   cursor: pointer;
-  color: hsl(200, 80%, 40%);
-}
-
-.open-in-browser:active,
-.share:active {
   color: hsl(210, 100%, 50%);
 }
 
-#profile {
-  position: absolute;
-  opacity: 0.6;
-  top: 24vh;
-  right: 4vh;
-  z-index: -1;
-  width: 20vh;
-  border-radius: 12px;
-  box-shadow: 0px 0px 10px 2px hsl(0, 0%, 60%);
+.open-in-browser:active,
+.terminal:active {
+  color: hsl(210, 100%, 50%);
 }
 
-.contact-info {
-  margin-top: 12vh;
-}
-
-form input,
-textarea {
-  display: flex;
-  margin: 0 auto;
-  font-family: 'JetBrains Mono', monospace;
-  font-weight: bold;
-  text-align: center;
-  outline: 0px;
-  width: 40vh;
-  color: hsl(0, 0%, 20%);
-  background-color: transparent;
-  border: transparent;
-  border-bottom: hsl(0, 0%, 90%) 3px ridge;
-  padding: 8px;
-  margin-bottom: 4vh;
-  transition: border 0.2s ease-in-out;
-}
-
-input:focus,
-textarea:focus {
-  border-bottom: hsl(210, 100%, 50%) 3px solid;
-}
-
-.send {
-  display: flex;
-  margin: 0 auto;
-  border-radius: 4px;
-  border: none;
-  background: hsl(0, 0%, 90%);
-  font-family: 'JetBrains Mono', monospace;
-  font-weight: bold;
-  padding: 1vh;
-  transition: all 0.2s ease-in-out;
-}
-
-.send:hover {
-  color: hsl(207, 100%, 100%);
+.tooltip {
+  position: relative;
   cursor: pointer;
-  background: hsl(210, 100%, 50%);
+  font-family: 'Permanent Marker', cursive;
+  text-align: center;
+  font-size: 12px;
+  margin-left: 10%;
+  margin-right: 10%;
 }
 
-footer {
-  position: fixed;
-  opacity: 0.6;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  width: 100%;
-  height: 0px;
-  border-bottom: hsl(167, 100%, 40%) 10px solid;
-  text-align: left;
+.tooltip .tooltiptext {
+  position: absolute;
+  bottom: -32%;
+  left: 0%;
+  right: 0%;
   color: hsl(0, 0%, 20%);
-  font-family: 'JetBrains Mono', monospace;
-  font-size: 14px;
-  background: hsl(207, 100%, 100%);
+  font-weight: bold;
+  opacity: 0;
   transition: all 0.2s ease-in-out;
 }
 
-footer:hover {
-  border-bottom:hsl(0, 0%, 20%) 10px solid;
-  background: transparent;
+.tooltip:hover .tooltiptext {
   opacity: 1;
-  height: 40px;
-}
-
-.end-note {
-  font-weight: bolder;
-  font-size: larger;
-  margin-left: 8%;
 }
