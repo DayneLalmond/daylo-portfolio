@@ -19,10 +19,10 @@ function Home() {
         <section className="topics">
           <h3 id="about-me">About Me</h3>
           <p className="first-p"><b>J</b>unior full-stack web developer, aspiring software engineer, and ambitious innovator. Focused primarily
-            on <strong className="bold">MERN</strong> stack applications, I study the tools and material to bring my . On my personal time,
+            on <strong className="bold">MERN</strong> stack applications, I study the tools and material to expand my skillset. On my personal time,
             I enjoy gardening or hiking.</p>
           <h3 id="dev-blog">Dev Blog</h3>
-          <p className="second-p"><b>O</b>rganized documentation is an essential technique alone. With logical reasoning, the complex breakthroughs,
+          <p className="second-p"><b>O</b>rganized documentation is an essential technique alone. With logical reasoning, complex breakthroughs,
             and additional tips, coding becomes simpler. My interest in these <strong className="bold">techniques</strong> inspired me to save
             useful topics to my portfolio. Check out my <strong id="devBlog"><NavLink to="/blog">blog</NavLink></strong> to see what I find.
           </p>
