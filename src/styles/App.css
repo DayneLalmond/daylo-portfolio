@@ -1,7 +1,6 @@
 html {
     overflow-y: scroll;
     scroll-behavior: smooth;
-    height: 125vh;
 }
 
 body {
@@ -92,15 +91,6 @@ a:active {
     color: hsl(210, 100%, 50%);
 }
 
-#linked-in:hover {
-    text-decoration: underline;
-    color: hsl(210, 100%, 50%);
-}
-
-#linked-in:active {
-    color: black;
-}
-
 #home,
 #blog {
     font-family: 'JetBrains Mono', monospace;
@@ -116,10 +106,6 @@ a:active {
     transform: translate(0%, 4%);
     font-weight: bolder;
     scale: 1.1;
-}
-
-#devBlog {
-    text-decoration: underline;
 }
 
 footer {

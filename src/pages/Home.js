@@ -24,7 +24,7 @@ function Home() {
           <h3 id="dev-blog">Dev Blog</h3>
           <p className="second-p"><b>O</b>rganized documentation is an essential technique alone. With logical reasoning, complex breakthroughs,
             and additional tips, coding becomes simpler. My interest in these <strong className="bold">techniques</strong> inspired me to save
-            useful topics to my portfolio. Check out my <strong id="devBlog"><NavLink to="/blog">blog</NavLink></strong> to see what I find.
+            useful topics to my portfolio. Check out my <strong><NavLink to="/blog">blog</NavLink></strong> to see what I find.
           </p>
         </section>
       </div>
@@ -78,7 +78,9 @@ function Home() {
       </section>
       <h2>Stay connected</h2>
       <section className="topics">
-        <p className="third-p"><b>C</b>ontact me on <strong className="bold"><a rel="noreferrer" href="https://www.linkedin.com/in/dayne-lalmond/" target="_blank" id="linked-in">LinkedIn</a></strong> to find out more.</p>
+        <p className="third-p"><b>C</b>ontact me on <strong><a rel="noreferrer" href="https://www.linkedin.com/in/dayne-lalmond/" target="_blank" className="ext-link">LinkedIn</a></strong> to 
+        find out more. Join me in support of reforestation. <strong><a rel="noreferrer" href="http://onetreeplanted.refr.cc/daynel" target="_blank" className="ext-link">Plant</a></strong> a 
+        tree, promote sustainability.</p>
       </section>
     </main>
   );
