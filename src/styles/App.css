@@ -6,7 +6,7 @@ html {
 
 body {
     background: hsl(207, 100%, 98%);
-    animation: load 1.2s ease-in;
+    animation: load 1.0s ease-in;
 }
 
 @keyframes load {

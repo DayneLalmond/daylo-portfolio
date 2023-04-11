@@ -78,7 +78,6 @@ function Home() {
       </section>
       <h2>Stay connected</h2>
       <section className="topics">
-        <h3 id="stay-connected">Reach Out</h3>
         <p className="third-p"><b>C</b>ontact me on <strong className="bold"><a rel="noreferrer" href="https://www.linkedin.com/in/dayne-lalmond/" target="_blank" id="linked-in">LinkedIn</a></strong> to find out more.</p>
       </section>
     </main>
