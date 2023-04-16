@@ -25,7 +25,6 @@ h3 {
   font-family: 'Permanent Marker', cursive;
   font-size: medium;
   text-shadow: -2px 1px #C9CEBD;
-  border-radius: 5px;
   cursor: default;
   width: 50%;
 }
@@ -82,7 +81,7 @@ mark {
 }
 
 b {
-  font-size: larger;
+  font-size: medium;
 }
 
 #about-me {

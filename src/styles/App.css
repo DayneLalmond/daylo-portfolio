@@ -48,28 +48,19 @@ header .called:hover {
     box-shadow: 0px 0px 4px 2px hsl(0, 0%, 90%);
 }
 
-#palm {
-    position: absolute;
-    display: block;
-    max-height: 140%;
-    height: auto;
-    top: -20%;
-    margin-left: 92%;
-}
-
-h1 {
+/* h1 {
     font-family: 'Permanent Marker', cursive;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
     margin-left: auto;
-    margin-right: 8%;
+    margin-right: 14%;
     margin-top: 1%;
     margin-bottom: 0;
     font-size: x-large;
     color: hsl(0, 0%, 20%);
     cursor: default;
-}
+} */
 
 a:link {
     color: hsl(0, 0%, 20%);
@@ -133,5 +124,14 @@ footer {
   .end-note {
     font-weight: bolder;
     font-size: larger;
-    margin-left: 8%;
+    margin-left: 75%;
   }
+
+  #palm {
+    position: absolute;
+    display: block;
+    max-height: 140%;
+    height: auto;
+    top: -20%;
+    margin-left: 86%;
+}

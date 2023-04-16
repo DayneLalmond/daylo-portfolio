@@ -3,7 +3,6 @@ import { NavLink } from "react-router-dom";
 import { useInView } from 'react-intersection-observer';
 
 import '../styles/App.css';
-import Palm from '../images/palm_trees.png';
 
 function Header() {
 
@@ -22,8 +21,6 @@ function Header() {
                 <div className={isCalled ? "called" : "dropped"}>
                     <NavLink to="/" id='home'>Home</NavLink>
                     <NavLink to="/blog" id='home'>Blog</NavLink>
-                    <h1>Dayne</h1>
-                    <img src={Palm} id="palm" alt="palm tree" />
                 </div>
             ) : (
                 <div className={!isCalled ? "called" : "dropped"}>

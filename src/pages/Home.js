@@ -14,7 +14,7 @@ function Home() {
   return (
     <main>
       <div>
-        <img src={avatar} id="profile" alt="Avatar" />
+        <img src={avatar} id="profile" alt="Avatar"/>
         <h2>Aloha, I'm Dayne</h2>
         <section className="topics">
           <h3 id="about-me">About Me</h3>
@@ -34,7 +34,7 @@ function Home() {
         <ul className="image-gallery">
           <li>
             <div className="overlay">
-              <img src={tac} alt="tac" />
+              <img src={tac} alt="tac"/>
               <p className="title">{title[0]}</p>
               <p className="description">Build an email listing. Design your ad layout.
                 Send personalized ads to your audience.</p>
@@ -48,7 +48,7 @@ function Home() {
           </li>
           <li>
             <div className="overlay">
-              <img src={calendar} alt="calendar" />
+              <img src={calendar} alt="calendar"/>
               <p className="title">{title[1]}</p>
               <p className="description">Determine your schedule ahead of time by adding
                 tasks to this auto updating monthly calendar.</p>
@@ -62,7 +62,7 @@ function Home() {
           </li>
           <li>
             <div className="overlay">
-              <img src={quiz} alt="quiz" />
+              <img src={quiz} alt="quiz"/>
               <p className="title">{title[2]}</p>
               <p className="description">Take the Javascript quiz to test your knowledge
                 on coding terminology and functions.</p>
@@ -78,8 +78,9 @@ function Home() {
       </section>
       <h2>Stay connected</h2>
       <section className="topics">
-        <p className="third-p"><b>C</b>ontact me on <strong><a rel="noreferrer" href="https://www.linkedin.com/in/dayne-lalmond/" target="_blank" className="ext-link">LinkedIn</a></strong> to 
-        find out more. Join me in support of reforestation. <strong><a rel="noreferrer" href="http://onetreeplanted.refr.cc/daynel" target="_blank" className="ext-link">Plant</a></strong> a 
+        <p className="third-p"><b>C</b>ontact me on <strong><a rel="noreferrer" href="https://www.linkedin.com/in/dayne-lalmond/" target="_blank" className="ext-link">LinkedIn</a></strong>.
+        Follow me on <strong><a rel="noreferrer" href="https://github.com/DayneLalmond" target="_blank" className="ext-link">GitHub</a></strong>. Join me in support of reforestation. <strong>
+        <a rel="noreferrer" href="http://onetreeplanted.refr.cc/daynel" target="_blank" className="ext-link">Plant</a></strong> a 
         tree, promote sustainability.</p>
       </section>
     </main>
