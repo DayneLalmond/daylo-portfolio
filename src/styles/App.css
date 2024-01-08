@@ -4,7 +4,9 @@ html {
 }
 
 body {
-    background: hsl(207, 100%, 98%);
+    /* background: hsl(207, 100%, 98%); */
+    background: hsl(0, 5%, 13%);
+    color: hsl(207, 100%, 98%);
     animation: load 1.0s ease-in;
 }
 
@@ -21,49 +23,59 @@ body {
     background: hsl(165, 100%, 80%);
 }
 
-header .dropped {
-    position: fixed;
-    display: flex;
-    height: 0;
-    top: 0;
-    left: 0;
-    right: 0;
-    color: hsl(0, 0%, 20%);
-    transition: all 0.4s ease-in-out;
+nav {
+  position: fixed;
+  display: flex;
+  width: 0em;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+  background: hsl(0, 0%, 90%);
+  color: hsl(207, 100%, 98%);
+  transition: all 0.3s ease-in-out;
 }
-  
-header .called {
+
+nav.active {
+  width: 12em;
+  box-shadow: 0px 0px 20px 40px hsl(0, 0%, 90%);
+}
+
+/* header .dropped {
     position: fixed;
     display: flex;
-    height: 6vh;
+    width: 0vw;
+    height: 100vh;
     top: 0;
     left: 0;
     right: 0;
     background: hsl(207, 100%, 100%);
-    color: hsl(0, 0%, 20%);
+    color: hsl(207, 100%, 98%);
     transition: all 0.4s ease-in-out;
-}
+} */
+  
+/* header {
+    position: fixed;
+    display: flex;
+    height: 10vh;
+    top: 0;
+    left: 0;
+    right: 0;
+    text-align: center;
+    justify-content: center;
+    background: hsl(0, 0%, 20%);
+    box-shadow: 0px 0px 4px 2px hsl(0, 0%, 20%);
+    color: hsl(207, 100%, 98%);
+    transition: all 0.4s ease-in-out;
+} */
 
-header .called:hover {
-    box-shadow: 0px 0px 4px 2px hsl(0, 0%, 90%);
-}
-
-/* h1 {
-    font-family: 'Permanent Marker', cursive;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    margin-left: auto;
-    margin-right: 14%;
-    margin-top: 1%;
-    margin-bottom: 0;
-    font-size: x-large;
-    color: hsl(0, 0%, 20%);
-    cursor: default;
+/* header .called:hover {
+    box-shadow: 0px 0px 4px 2px hsl(0, 0%, 20%);
 } */
 
 a:link {
-    color: hsl(0, 0%, 20%);
+    color: hsl(207, 100%, 98%);
     text-decoration: none;
 }
   
@@ -83,20 +95,49 @@ a:active {
 }
 
 #home,
-#blog {
-    font-family: 'JetBrains Mono', monospace;
-    font-size: 16px;
-    text-decoration: none;
-    margin-left: 1%;
-    padding: 1%;
+#blog,
+#work {
+    /* display: inline-block; */
+    position: relative;
+    display: block;
+    color: hsl(0, 5%, 13%);
+    margin-left: 1.4em;
+    top: 1vh;
+    margin-block: 7vh;
+    font-family: 'Patua One', cursive;
+    font-size: 2em;
     transition: all 0.2s ease-in-out;
 }
 
 #home:hover,
-#blog:hover {
+#blog:hover,
+#work:hover {
     transform: translate(0%, 4%);
     font-weight: bolder;
     scale: 1.1;
+    color: hsl(207, 100%, 98%);
+}
+
+#menu {
+  position: relative;
+  color: hsl(167, 100%, 40%);
+  /* margin: 1em; */
+  /* margin-left: 3vw; */
+  scale: 1.5;
+  top: 3vh;
+  left: 2em;
+  z-index: 1;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+#menu:active {
+  color: hsl(0, 5%, 13%);
+}
+
+#menu:hover {
+  color: hsl(207, 100%, 98%);
+  font-weight: bolder;
 }
 
 footer {
@@ -109,14 +150,14 @@ footer {
     height: 0px;
     border-bottom: hsl(167, 100%, 40%) 12px solid;
     text-align: left;
-    color: hsl(0, 0%, 20%);
+    color: hsl(207, 100%, 98%);
     font-family: 'JetBrains Mono', monospace;
     font-size: 14px;
     transition: all 0.2s ease-in-out;
   }
   
   footer:hover {
-    border-bottom:hsl(0, 0%, 20%) 12px solid;
+    border-bottom:hsl(0, 0%, 90%) 12px solid;
     opacity: 1;
     height: 40px;
   }
@@ -129,6 +170,7 @@ footer {
 
   #palm {
     position: absolute;
+    filter: invert(1);
     display: block;
     max-height: 140%;
     height: auto;

@@ -1,32 +1,116 @@
 #profile {
   position: absolute;
   opacity: 0.6;
-  top: 24vh;
+  top: 20vh;
   right: 6vh;
   z-index: -1;
   width: 24vh;
   border-radius: 12px;
-  box-shadow: 0px 0px 10px 2px hsl(0, 0%, 60%);
+  box-shadow: 0px 0px 40px 4px hsl(0, 0%, 60%);
+}
+
+h1 {
+  /* position: relative; */
+  display: block;
+  cursor: default;
+  width: 100%;
+  color: hsl(207, 100%, 98%);
+  border-bottom: 5px ridge hsl(207, 100%, 100%);
+  height: auto;
+  text-align: center;
+  font-family: 'Pacifico', cursive;
+  font-size: 20vh;
+  text-shadow: -4px 6px #C9CEBD;
+}
+
+/* h1::before {  
+  transform: scaleX(0);
+  transform-origin: top left;
+}
+
+h1:hover::before {
+  transform: scaleX(1);
+  transform-origin: top right;
+}
+
+h1::before {
+  content: " ";
+  display: inline-block;
+  position: absolute;
+  top: 0; right: 0; bottom: 0; left: 0;
+  background: hsl(207, 100%, 100%);
+  box-shadow: 0px 0px 4px 2px hsl(0, 0%, 90%);
+  z-index: -1;
+  transition: transform 0.4s ease-in-out;
+} */
+
+/* #anchorHome:hover {
+  color: hsl(210, 100%, 50%);
+} */
+
+#anchorHome:visited {
+  color: none;
 }
 
 h2 {
+  /* position: fixed;
+  display: block; */
+  margin-left: 20vh;
+  margin-top: -10vh;
+  margin-bottom: 40vh;
+  text-align: center;
+  font-family: 'Patua One', cursive;
+  font-size: 1.6em;
+  text-shadow: -4px 6px #C9CEBD;
+  z-index: -1;
+  cursor: default;
+  color: hsl(207, 100%, 98%);
+}
+
+h3 {
     display: block;
-    padding-top: 8%;
+    padding-top: 4%;
     text-align: center;
-    font-family: 'Permanent Marker', cursive;
+    font-family: 'Patua One', cursive;
     font-size: 32px;
-    text-shadow: -4px 6px #C9CEBD;
+    text-shadow: -2px 2px hsl(0, 0%, 60%);
     cursor: default;
   }
 
-h3 {
+h4 {
+  opacity: 1;
   display: block;
   text-align: center;
-  font-family: 'Permanent Marker', cursive;
+  font-family: 'Patua One', cursive;
   font-size: medium;
-  text-shadow: -2px 1px #C9CEBD;
+  text-shadow: -1px 1px hsl(0, 0%, 60%);
   cursor: default;
   width: 50%;
+}
+
+.next {
+  margin-top: 10vh;
+  height: 120vh;
+}
+
+.isVisible {
+  position: absolute;
+  width: auto;
+  font-size: larger;
+  /* background: hsl(210, 100%, 50%); */
+  color: hsl(207, 100%, 98%);
+  animation: slideUp 0.8s ease forwards;
+}
+
+@keyframes slideUp {
+	from {
+		transform: translateY(100%);
+		opacity: 0;
+	}
+	to {
+		transform: translateY(0);
+		opacity: 1;
+	}
 }
 
 .topics {
@@ -106,7 +190,23 @@ b {
 
 .container {
   padding: 20px 5%;
-  margin-right: 40px;
+  margin-left: auto;
+  margin-right: auto;
+  /* margin-left: -85px; */
+}
+
+.featured {
+  position: relative;
+  display: inline;
+  right: -1vh;
+  text-indent: 20px;
+  margin-right: 30%;
+  margin-left: 20%;
+}
+
+#observer-div {
+  margin-top: 20vh;
+  margin-bottom: 50vh;
 }
 
 ul {
@@ -146,12 +246,12 @@ ul {
   width: 100%;
   height: auto;
   padding: 4%;
-  background: hsl(207, 100%, 100%);
+  background: hsl(0, 0%, 60%);
   transition: all 0.4s ease-in-out;
 }
 
 .title {
-  font-family: 'Permanent Marker', cursive;
+  font-family: 'Patua One', cursive;
   text-shadow: -2px 1px #C9CEBD;
   font-weight: bolder;
   align-items: center;
@@ -173,7 +273,7 @@ ul {
 }
 
 .open-in-browser, .terminal {
-  color: hsl(0, 0%, 20%);
+  color: hsl(207, 100%, 98%);
   transition: all 0.2s ease-in-out;
 }
 
@@ -192,7 +292,7 @@ ul {
 .tooltip {
   position: relative;
   cursor: pointer;
-  font-family: 'Permanent Marker', cursive;
+  font-family: 'Patua One', cursive;
   text-align: center;
   font-size: 12px;
   margin-left: 10%;
@@ -204,7 +304,7 @@ ul {
   bottom: -32%;
   left: 0%;
   right: 0%;
-  color: hsl(0, 0%, 20%);
+  color: hsl(207, 100%, 98%);
   font-weight: bold;
   opacity: 0;
   transition: all 0.2s ease-in-out;
@@ -212,4 +312,33 @@ ul {
 
 .tooltip:hover .tooltiptext {
   opacity: 1;
+}
+
+/* Landing page fade */
+@keyframes fade {
+  100% {
+    opacity: 1;
+    filter: blur(0);
+  }
+}
+
+.resumePage {
+  margin: 2em;
+  margin-block: 2em;
+  background: hsl(207, 100%, 100%);
+  border: 2px solid hsl(0, 0%, 90%);
+  box-shadow: 0px 0px 4px 2px hsl(0, 0%, 90%);
+}
+
+#list li {
+  position: relative;
+  float: left;
+  display: block;
+  margin: 1vw;
+}
+
+.points {
+  margin: auto;
+  width: auto;
+  border-bottom: 2px solid hsl(0, 0%, 90%);
 }
