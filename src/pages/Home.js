@@ -4,9 +4,6 @@ import { useInView } from 'react-intersection-observer';
 
 import avatar from '../images/comic.jpg';
 import holiday from '../images/holiday.png';
-import tac from '../images/tac.JPG';
-import calendar from '../images/calendar.png';
-import quiz from '../images/quiz.png';
 
 function Home() {
 
@@ -20,7 +17,7 @@ function Home() {
 
   const [isVisible, setIsVisible] = useState("true");
 
-  const [title] = useState(['The Holiday', 'Calendar Dashboard', 'Javascript Quiz']);
+  const [title] = useState(['The Holiday Network', 'Calendar Dashboard', 'Javascript Quiz']);
 
   return (
     <main>
@@ -32,27 +29,26 @@ function Home() {
           <h4 id="about-me">About Me</h4>
           <p className="first-p"><b>J</b>unior full-stack web developer, aspiring software engineer, and ambitious innovator. Focused primarily
             on <strong className="bold">MERN</strong> stack applications, I study the tools and material to expand my skillset. On my personal time,
-            I enjoy reading.</p>
+            I enjoy reading, exercising, and listening to music.</p>
           <h4 id="dev-blog">My Studies</h4>
-          <p className="second-p"><b>O</b>rganized documentation is an essential technique alone. With logical reasoning, complex breakthroughs,
-            and additional tips, coding becomes simpler. My interest in these <strong className="bold">techniques</strong> inspired me to save
-            useful topics to my portfolio. Check out my <strong><NavLink to="/blog">blog</NavLink></strong> to see what I find.
+          <p className="second-p"><b>S</b>tart by understanding. With logical reasoning, complex breakthroughs,
+            and additional tips, coding becomes simpler. The best sources to learn from come with good <strong className="bold">documentation</strong>. 
+            While developing a range of new material, remembering to review and save comments completes your work. See my <strong><NavLink to="/projects">
+            projects</NavLink></strong> to explore more of what I do.
           </p>
         </section>
       </div>
 
-      <h3>Featured projects</h3>
+      <h3>Featured project</h3>
 
       <section className="container" ref={ref}>
         {inView ? (
           <div className={isVisible ? "isVisible" : ""}>
             <div className="featured">
-              <img src={holiday} alt="logo" id="holiday"/>
+              <img src={holiday} alt="logo" id="holiday" />
               <p className="title">{title[0]}</p>
-              <p className="description">A multiplatform Minecraft community. Check out the <strong><a rel="noreferrer" href="https://www.theholiday.net/" target="_blank" className="ext-link">website</a></strong>.</p>
+              <p className="description"><b>Q</b>uality multiplatform Minecraft community. Check out the <strong><a rel="noreferrer" href="https://www.theholiday.net/" target="_blank" className="ext-link">Website</a></strong>. Discuss on <strong><a rel="noreferrer" href="https://discord.gg/jzvyY2tFnQ" target="_blank" className="ext-link">Discord</a></strong>. Support me on <strong><a rel="noreferrer" href="https://www.patreon.com/holidaye" target="_blank" className="ext-link">Patreon</a></strong>.</p>
             </div>
-            
-
           </div>
         ) : (
           <div className={!isVisible ? "setVisible" : ""}>
@@ -61,7 +57,7 @@ function Home() {
         )}
       </section>
       <div id="observer-div">
-
+        {/* Space for the intersection observer */}
       </div>
 
       <h3>Stay connected</h3>

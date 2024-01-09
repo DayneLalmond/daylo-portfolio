@@ -9,6 +9,40 @@
   box-shadow: 0px 0px 40px 4px hsl(0, 0%, 60%);
 }
 
+#github {
+  position: relative;
+  display: block;
+  margin-top: 40vh;
+  left: 4vh;
+  width: 6vh;
+  height: auto;
+  border-radius: 100%;
+  border: transparent 3px solid;
+  filter: drop-shadow(0px 0px 1px hsl(0, 0%, 60%));
+  transition: all 0.2s ease-in-out;
+  animation: reveal-github 2.0s ease forwards;
+}
+
+@keyframes reveal-github {
+  from {
+    transform: translateX(300%);
+    filter: blur(1px);
+    opacity: 0;
+  }
+
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+#github:hover {
+  width: 7vh;
+  left: 3.5vh;
+  border: hsl(0, 0%, 90%) 3px solid;
+  filter: invert(1);
+}
+
 h1 {
   /* position: relative; */
   display: block;
@@ -19,18 +53,18 @@ h1 {
   height: auto;
   text-align: center;
   font-family: 'Pacifico', cursive;
-  font-size: 20vh;
+  font-size: 18vh;
   text-shadow: -4px 6px #C9CEBD;
 }
 
 /* h1::before {  
   transform: scaleX(0);
-  transform-origin: top left;
+  transform-origin: top right;
 }
 
 h1:hover::before {
   transform: scaleX(1);
-  transform-origin: top right;
+  transform-origin: top left;
 }
 
 h1::before {
@@ -44,9 +78,9 @@ h1::before {
   transition: transform 0.4s ease-in-out;
 } */
 
-/* #anchorHome:hover {
+#anchorHome:hover {
   color: hsl(210, 100%, 50%);
-} */
+}
 
 #anchorHome:visited {
   color: none;
@@ -61,21 +95,21 @@ h2 {
   text-align: center;
   font-family: 'Patua One', cursive;
   font-size: 1.6em;
-  text-shadow: -4px 6px #C9CEBD;
+  text-shadow: -2px 1px #C9CEBD;
   z-index: -1;
   cursor: default;
   color: hsl(207, 100%, 98%);
 }
 
 h3 {
-    display: block;
-    padding-top: 4%;
-    text-align: center;
-    font-family: 'Patua One', cursive;
-    font-size: 32px;
-    text-shadow: -2px 2px hsl(0, 0%, 60%);
-    cursor: default;
-  }
+  display: block;
+  padding-top: 4%;
+  text-align: center;
+  font-family: 'Patua One', cursive;
+  font-size: 32px;
+  text-shadow: -1px 1px hsl(0, 0%, 60%);
+  cursor: default;
+}
 
 h4 {
   opacity: 1;
@@ -103,14 +137,15 @@ h4 {
 }
 
 @keyframes slideUp {
-	from {
-		transform: translateY(100%);
-		opacity: 0;
-	}
-	to {
-		transform: translateY(0);
-		opacity: 1;
-	}
+  from {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
 }
 
 .topics {
@@ -175,7 +210,7 @@ b {
 
 #dev-blog {
   margin-top: 8%;
-  margin-left: 30%;
+  margin-left: 34%;
   margin-right: 10%;
 }
 
@@ -198,15 +233,44 @@ b {
 .featured {
   position: relative;
   display: inline;
-  right: -1vh;
-  text-indent: 20px;
-  margin-right: 30%;
-  margin-left: 20%;
+  margin-left: 36%;
+}
+
+#holiday {
+  animation: holiday 10s both infinite;
+}
+
+@keyframes holiday {
+  0% {
+    filter: drop-shadow(0px 0px 60px #FF6666);
+  }
+
+  50% {
+    filter: drop-shadow(0px 0px 100px #e6e6e6);
+  }
+
+  100% {
+    filter: drop-shadow(0px 0px 60px #FF6666);
+  }
+}
+
+.featured .title {
+  text-shadow: -1px 1px hsl(0, 0%, 60%);
+}
+
+.featured p {
+  position: relative;
+  text-indent: 0px;
+  right: -20vw;
+  width: 60%;
+  margin-right: 5%;
+  margin-left: -2%;
+  margin-bottom: 3%;
 }
 
 #observer-div {
   margin-top: 20vh;
-  margin-bottom: 50vh;
+  margin-bottom: 40vh;
 }
 
 ul {
@@ -220,8 +284,9 @@ ul {
   gap: 60px;
 }
 
-.image-gallery > li {
-  flex-basis: 300px; /*width: 300px;*/
+.image-gallery>li {
+  flex-basis: 300px;
+  /*width: 300px;*/
   cursor: default;
 }
 
@@ -272,7 +337,8 @@ ul {
   justify-content: center;
 }
 
-.open-in-browser, .terminal {
+.open-in-browser,
+.terminal {
   color: hsl(207, 100%, 98%);
   transition: all 0.2s ease-in-out;
 }
