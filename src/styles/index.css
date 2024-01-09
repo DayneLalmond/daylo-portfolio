@@ -12,7 +12,7 @@
 #github {
   position: relative;
   display: block;
-  margin-top: 40vh;
+  margin-top: 30vh;
   left: 4vh;
   width: 6vh;
   height: auto;
@@ -49,7 +49,7 @@ h1 {
   cursor: default;
   width: 100%;
   color: hsl(207, 100%, 98%);
-  border-bottom: 5px ridge hsl(207, 100%, 100%);
+  border-bottom: 6px ridge hsl(207, 100%, 100%);
   height: auto;
   text-align: center;
   font-family: 'Pacifico', cursive;
@@ -131,19 +131,18 @@ h4 {
   position: absolute;
   width: auto;
   font-size: larger;
-  /* background: hsl(210, 100%, 50%); */
   color: hsl(207, 100%, 98%);
-  animation: slideUp 0.8s ease forwards;
+  animation: slideUp 1.4s ease forwards;
 }
 
 @keyframes slideUp {
   from {
-    transform: translateY(100%);
+    transform: translateY(-20%);
     opacity: 0;
   }
 
   to {
-    transform: translateY(0);
+    transform: translateX(0);
     opacity: 1;
   }
 }
