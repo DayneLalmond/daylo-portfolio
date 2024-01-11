@@ -8,7 +8,7 @@ function Connect() {
       
       <section className="topics">
         <div id="stickyscroll">
-        <mark>4.16.23</mark>
+        <mark>Study Server</mark>
         <h4>Sticky scroll</h4>
         <p className="blogs"><b>T</b>he tools you choose are important. Visual Studio Code is the
           platform in which I learned to code. Not only does it provide an abundance of useful settings,
@@ -18,7 +18,7 @@ function Connect() {
           your settings ⇨ text editor ⇨ enable sticky scroll. You can easily toggle this setting from the
           view option.</p>
           </div>
-        <mark>4.11.23</mark>
+        <mark>Contact Me</mark>
         <h4>Save bookmarks</h4>
         <p className="blogs"><b>I</b>f you're like me, stuying code may often bring about several tabs.
           Perhaps, you want to use pieces here and there. However, with more open tabs, the false sense

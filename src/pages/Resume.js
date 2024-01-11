@@ -29,8 +29,30 @@ function Resume() {
           applications readily available for use. With experience and a passion to deliver
           solutions, I continue to challenge myself by introducing new tools and materials 
           to my stack.</p>
-          <h4 className="points">Skills</h4>
           <h4 className="points">Experience</h4>
+          <ul className="resume-bullets">
+            <li>
+              Quality work
+            </li>
+            <li>
+              Team player
+            </li>
+            <li>
+              Highly ambitious
+            </li>
+          </ul>
+          <h4 className="points">Skills</h4>
+          <ul className="resume-bullets">
+            <li>
+              Quality work
+            </li>
+            <li>
+              Team player
+            </li>
+            <li>
+              Highly ambitious
+            </li>
+          </ul>
         </section>
       </section>
     </main>

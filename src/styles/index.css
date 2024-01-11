@@ -16,18 +16,18 @@
   left: 4vh;
   width: 6vh;
   height: auto;
+  filter: invert(1);
   border-radius: 100%;
-  border: transparent 2px solid;
+  border: hsl(0, 0%, 60%) 2px solid;
   filter: drop-shadow(0px 0px 1px hsl(0, 0%, 60%));
   transition: all 0.2s ease-in-out;
-  animation: reveal-github 2.0s ease forwards;
+  animation: reveal 0.4s ease forwards;
 }
 
 @keyframes reveal-github {
   from {
     transform: translateX(300%);
-    filter: blur(1px);
-    filter: invert(1);
+
     opacity: 0;
   }
 
@@ -39,9 +39,10 @@
 }
 
 #github:hover {
-  width: 6.5vh;
+  width: 6.4vh;
   left: 4vh;
-  border: hsl(0, 5%, 13%) 2px solid;
+  filter: invert(1);
+  border: transparent 2px solid;
 }
 
 h1 {
@@ -155,6 +156,7 @@ h4 {
   line-height: 24px;
   width: 80%;
   cursor: default;
+  transition: all 0.3 ease-in;
   animation: fadeIn 1s ease-in;
 }
 
@@ -179,11 +181,16 @@ h4 {
   margin-left: 5%;
 }
 
-.blogs {
-  text-indent: 20px;
+.resume-bullets {
+  font-family: 'JetBrains Mono', monospace;
   margin-right: 8%;
-  margin-left: 8%;
+  margin-left: 12%;
   margin-bottom: 5%;
+}
+
+.resume-bullets li {
+  list-style: square;
+  margin: 1vh;
 }
 
 mark {
@@ -282,6 +289,7 @@ b {
 
 ul {
   list-style: none;
+  transition: all 0.3 ease-in;
   animation: fadeIn 1s ease-in;
 }
 
@@ -385,8 +393,8 @@ ul {
   font-family: 'JetBrains Mono', monospace;
   font-size: 14px;
   text-indent: 20px;
-  margin-right: 5%;
-  margin-left: 5%;
+  margin-right: 15%;
+  margin-left: 15%;
 }
 
 @keyframes fadeIn {
@@ -400,7 +408,7 @@ ul {
 
 .points {
   margin: auto;
-  width: auto;
+  width: 80%;
   padding-bottom: 10px;
   /* margin-bottom: 10px; */
   border-bottom: 2px solid hsl(0, 0%, 90%);

@@ -7,7 +7,7 @@ function Landing() {
   return (
     <div>
       <h1>Dayne</h1>
-      <h2>Create <NavLink to="/home" id="anchorHome">&lt;a&gt;</NavLink> new concept</h2>
+      <h2>Develop <NavLink to="/home" id="anchorHome">&lt;a&gt;</NavLink> solution.</h2>
     </div>
   );
 }

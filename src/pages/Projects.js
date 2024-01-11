@@ -25,7 +25,7 @@ function Work() {
           <li>
             <div className="overlay">
               <img src={pxfuel} alt="tac" />
-              <p className="title">Design</p>
+              <p className="title">Data Scraping</p>
               <p className="description">Build an email listing. Design your ad layout.
                 Send personalized ads to your audience.</p>
               <div className="icon-links">
