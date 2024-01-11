@@ -44,7 +44,7 @@ function Home() {
 
       <h3 id="feature">Featured project</h3>
 
-      <section className="container" ref={ref}>
+      <section className="container home" ref={ref} id="observed-section">
         {inView ? (
           <div className={isVisible ? "isVisible" : ""}>
             <div className="featured">

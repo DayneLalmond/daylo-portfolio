@@ -33,15 +33,14 @@ nav {
   left: 0;
   right: 0;
   z-index: 1;
-  background: hsl(0, 0%, 90%);
-  box-shadow: 0px 0px 0px 0px hsl(0, 0%, 90%);
-  color: hsl(207, 100%, 98%);
+  background: hsl(0, 5%, 13%);
+  box-shadow: 0px 0px 0px 0px hsl(0, 5%, 13%);
   transition: all 0.3s ease-in-out;
 }
 
 nav.active {
   width: 6em;
-  box-shadow: 0px 0px 20px 40px hsl(0, 0%, 90%);
+  box-shadow: 0px 0px 20px 40px hsl(0, 5%, 13%);
 }
 
 /* header .dropped {
@@ -103,7 +102,7 @@ a:active {
     /* display: inline-block; */
     position: relative;
     display: block;
-    color: hsl(0, 5%, 13%);
+    color: hsl(207, 100%, 98%);
     margin-left: 1.2em;
     top: 4vh;
     opacity: 0;

@@ -1,10 +1,10 @@
 import React from 'react';
 import '../styles/index.css';
-function Blog() {
+function Connect() {
 
   return (
     <main>
-      <h3>Dev Blog</h3>
+      <h3>Let's connect</h3>
       
       <section className="topics">
         <div id="stickyscroll">
@@ -31,4 +31,4 @@ function Blog() {
   );
 }
 
-export default Blog;
+export default Connect;

@@ -17,7 +17,7 @@
   width: 6vh;
   height: auto;
   border-radius: 100%;
-  border: transparent 3px solid;
+  border: transparent 2px solid;
   filter: drop-shadow(0px 0px 1px hsl(0, 0%, 60%));
   transition: all 0.2s ease-in-out;
   animation: reveal-github 2.0s ease forwards;
@@ -27,24 +27,24 @@
   from {
     transform: translateX(300%);
     filter: blur(1px);
+    filter: invert(1);
     opacity: 0;
   }
 
   to {
     transform: translateX(0);
     opacity: 1;
+    filter: invert(1);
   }
 }
 
 #github:hover {
-  width: 7vh;
-  left: 3.5vh;
-  border: hsl(0, 0%, 90%) 3px solid;
-  filter: invert(1);
+  width: 6.5vh;
+  left: 4vh;
+  border: hsl(0, 5%, 13%) 2px solid;
 }
 
 h1 {
-  /* position: relative; */
   display: block;
   cursor: default;
   width: 100%;
@@ -53,7 +53,7 @@ h1 {
   height: auto;
   text-align: center;
   font-family: 'Pacifico', cursive;
-  font-size: 18vh;
+  font-size: 16vh;
   text-shadow: -4px 6px #C9CEBD;
 }
 
@@ -155,6 +155,7 @@ h4 {
   line-height: 24px;
   width: 80%;
   cursor: default;
+  animation: fadeIn 1s ease-in;
 }
 
 .first-p {
@@ -226,7 +227,14 @@ b {
   padding: 20px 5%;
   margin-left: auto;
   margin-right: auto;
-  /* margin-left: -85px; */
+  margin-left: -50px;
+}
+
+.home {
+  padding: 20px 5%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 300px;
 }
 
 .featured {
@@ -274,6 +282,7 @@ b {
 
 ul {
   list-style: none;
+  animation: fadeIn 1s ease-in;
 }
 
 .image-gallery {
@@ -299,7 +308,7 @@ ul {
 }
 
 .image-gallery li img {
-  box-shadow: 0px 0px 4px 2px hsl(0, 0%, 90%);
+  /* box-shadow: 0px 0px 4px 2px hsl(0, 0%, 90%); */
   object-fit: cover;
   max-width: 100%;
   height: auto;
@@ -310,13 +319,14 @@ ul {
   width: 100%;
   height: auto;
   padding: 4%;
-  background: hsl(0, 0%, 60%);
-  transition: all 0.4s ease-in-out;
+  background: transparent;
+  border-radius: 4%;
+  transition: all 0.3s ease-in-out;
 }
 
 .title {
   font-family: 'Patua One', cursive;
-  text-shadow: -2px 1px #C9CEBD;
+  text-shadow: -1px 1px hsl(0, 0%, 60%);
   font-weight: bolder;
   align-items: center;
   text-align: center;
@@ -354,7 +364,7 @@ ul {
   color: hsl(210, 100%, 50%);
 }
 
-.tooltip {
+.icon {
   position: relative;
   cursor: pointer;
   font-family: 'Patua One', cursive;
@@ -364,46 +374,34 @@ ul {
   margin-right: 10%;
 }
 
-.tooltip .tooltiptext {
-  position: absolute;
-  bottom: -32%;
-  left: 0%;
-  right: 0%;
-  color: hsl(207, 100%, 98%);
-  font-weight: bold;
-  opacity: 0;
-  transition: all 0.2s ease-in-out;
-}
-
-.tooltip:hover .tooltiptext {
-  opacity: 1;
-}
-
-/* Landing page fade */
-@keyframes fade {
-  100% {
-    opacity: 1;
-    filter: blur(0);
-  }
-}
-
 .resumePage {
   margin: 2em;
-  margin-block: 2em;
-  background: hsl(207, 100%, 100%);
-  border: 2px solid hsl(0, 0%, 90%);
-  box-shadow: 0px 0px 4px 2px hsl(0, 0%, 90%);
+  transition: all 0.3 ease-in;
+  animation: fadeIn 1s ease-in;
+  /* box-shadow: 0px 0px 4px 2px hsl(0, 0%, 90%); */
 }
 
-#list li {
-  position: relative;
-  float: left;
-  display: block;
-  margin: 1vw;
+.resume-p {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 14px;
+  text-indent: 20px;
+  margin-right: 5%;
+  margin-left: 5%;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 .points {
   margin: auto;
   width: auto;
+  padding-bottom: 10px;
+  /* margin-bottom: 10px; */
   border-bottom: 2px solid hsl(0, 0%, 90%);
 }

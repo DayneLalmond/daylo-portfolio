@@ -7,7 +7,7 @@ import Nav from './components/Nav';
 import Footer from './components/Footer';
 import Home from './pages/Home';
 import Landing from './pages/Landing';
-import Blog from './pages/Blog';
+import Connect from './pages/Connect';
 import Projects from './pages/Projects';
 import Resume from './pages/Resume';
 
@@ -21,9 +21,9 @@ export default function App() {
           <Routes>
             <Route exact path="/" element={<Landing />} />
             <Route exact path="/home" element={<Home />} />
-            <Route exact path="/blog" element={<Blog />} />
             <Route exact path="/projects" element={<Projects />} />
             <Route exact path="/resume" element={<Resume />} />
+            <Route exact path="/connect" element={<Connect />} />
           </Routes>
         <Footer></Footer>
       </BrowserRouter>
