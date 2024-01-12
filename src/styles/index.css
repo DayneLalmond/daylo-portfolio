@@ -244,7 +244,7 @@ b {
   margin-bottom: 300px;
 }
 
-.featured {
+.featured-div {
   position: relative;
   display: inline;
   margin-left: 36%;
@@ -268,11 +268,11 @@ b {
   }
 }
 
-.featured .title {
+.featured-div .title {
   text-shadow: -1px 1px hsl(0, 0%, 60%);
 }
 
-.featured p {
+.featured-div p {
   position: relative;
   text-indent: 0px;
   right: -20vw;

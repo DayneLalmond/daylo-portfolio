@@ -29,7 +29,7 @@ function Home() {
           <h4 id="about-me">About Me</h4>
           <p className="first-p"><b>J</b>unior full-stack web developer, aspiring software engineer, and ambitious innovator. Focused primarily
             on <strong className="bold">MERN</strong> stack applications, I study the tools and material to expand my skillset. Additionally, I love 
-            creating automation. If you're interested in some of my completed automation, see my <strong><a href="#feature">featured</a></strong> project. 
+            creating automation. If you're interested in some of my completed automation, see my <strong><a href="#featured">featured</a></strong> project. 
             Be sure to check out the Discord server provided. On my personal time,
             I enjoy reading, exercising, and listening to music.</p>
             
@@ -42,12 +42,12 @@ function Home() {
         </section>
       </div>
 
-      <h3 id="feature">Featured project</h3>
+      <h3 id="featured">Featured project</h3>
 
       <section className="container home" ref={ref} id="observed-section">
         {inView ? (
           <div className={isVisible ? "isVisible" : ""}>
-            <div className="featured">
+            <div className="featured-div">
               <img src={holiday} alt="logo" id="holiday" />
               <p className="title">{title[0]}</p>
               <p className="description"><b>Q</b>uality multiplatform Minecraft community. Check out the <strong><a rel="noreferrer" href="https://www.theholiday.net/" target="_blank" className="ext-link">Website</a></strong>. Discuss on <strong><a rel="noreferrer" href="https://discord.gg/jzvyY2tFnQ" target="_blank" className="ext-link">Discord</a></strong>. Support me on <strong><a rel="noreferrer" href="https://www.patreon.com/holidaye" target="_blank" className="ext-link">Patreon</a></strong>.</p>
