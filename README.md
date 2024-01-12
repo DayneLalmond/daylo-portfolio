@@ -3,7 +3,7 @@
 ![License Badge](https://shields.io/badge/license-MIT-limegreen)
 ![License Badge](https://img.shields.io/badge/Junior%20web%20developer-4D5BE2)
 
-![cover4](../daylo-portfolio/src/images/daylo-portfolio.png)
+![cover4](./src/images/daylo-portfolio.png)
 
 ### **[Primary Deployment](https://daylo-portfolio.herokuapp.com/)** | **[My Domain](https://www.daylo.dev/)**
 
