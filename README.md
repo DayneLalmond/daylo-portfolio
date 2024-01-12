@@ -5,7 +5,7 @@
 
 ![cover4](../daylo-portfolio/src/images/daylo-portfolio.png)
 
-### **[Primary Deployment](https://daylo-portfolio.herokuapp.com/)** | **[My Domain](https://www.daylo.dev/)** | **[LinkedIn Profile](https://www.linkedin.com/in/dayne-lalmond/)**
+### **[Primary Deployment](https://daylo-portfolio.herokuapp.com/)** | **[My Domain](https://www.daylo.dev/)**
 
 ## Table of Contents
 1. [Description](#description)
