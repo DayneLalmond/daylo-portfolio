@@ -413,3 +413,46 @@ ul {
   /* margin-bottom: 10px; */
   border-bottom: 2px solid hsl(0, 0%, 90%);
 }
+
+input[type="text"], textarea {
+  position: relative;
+  display: block;
+  text-align: center;
+  font-weight: bold;
+  font-size: larger;
+  color: hsl(0, 0%, 90%);
+  margin: 4%;
+  padding-bottom: 4px;
+  background-color: transparent;
+  border: transparent;
+  border-bottom: hsl(167, 100%, 40%) 2px solid;
+  width: 40vh;
+}
+
+input[type="text"]:focus {
+  border-bottom: hsl(0, 0%, 90%) 2px solid;
+
+  outline: none;
+} 
+
+input[type="button"] {
+  position: relative;
+  color: hsl(0, 0%, 90%);
+  border: none;
+  font-weight: bold;
+  font-size: larger;
+  padding: 8px;
+  border-radius: 10px;
+  background-color: hsl(0, 5%, 13%);
+  width: 6em;
+}
+
+input[type="button"]:hover {
+  cursor: pointer;
+  background-color: hsl(207, 100%, 100%);
+  color: hsl(0, 5%, 13%);
+}
+
+input[type="button"]:active {
+  color: hsl(210, 100%, 50%);
+}
