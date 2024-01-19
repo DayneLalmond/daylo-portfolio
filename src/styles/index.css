@@ -27,7 +27,6 @@
 @keyframes reveal-github {
   from {
     transform: translateX(300%);
-
     opacity: 0;
   }
 
@@ -40,7 +39,7 @@
 
 #github:hover {
   width: 6.4vh;
-  left: 4vh;
+  left: 3.8vh;
   filter: invert(1);
   border: transparent 2px solid;
 }
@@ -210,12 +209,12 @@ b {
   font-size: medium;
 }
 
-#about-me {
+.about-me {
   margin-right: 30%;
   margin-left: 10%;
 }
 
-#dev-blog {
+.study {
   margin-top: 8%;
   margin-left: 34%;
   margin-right: 10%;
@@ -256,15 +255,18 @@ b {
 
 @keyframes holiday {
   0% {
-    filter: drop-shadow(0px 0px 60px #FF6666);
+    filter: drop-shadow(0px 0px 40px #FF6666);
+    scale: 1.0;
   }
 
   50% {
-    filter: drop-shadow(0px 0px 100px #e6e6e6);
+    filter: drop-shadow(0px 0px 60px #e6e6e6);
+    scale: 1.2;
   }
 
   100% {
-    filter: drop-shadow(0px 0px 60px #FF6666);
+    filter: drop-shadow(0px 0px 40px #FF6666);
+    scale: 1.0;
   }
 }
 
@@ -401,6 +403,7 @@ ul {
   from {
     opacity: 0;
   }
+
   to {
     opacity: 1;
   }
@@ -414,45 +417,86 @@ ul {
   border-bottom: 2px solid hsl(0, 0%, 90%);
 }
 
-input[type="text"], textarea {
+#contact-me input[type="button"] {
   position: relative;
   display: block;
-  text-align: center;
-  font-weight: bold;
-  font-size: larger;
+  margin: 6vh;
+  left: 1vh;
+}
+
+#study-group input[type="button"] {
+  position: relative;
+  display: block;
+  margin: 6vh;
+  left: -2vh;
+}
+
+input[type="text"],
+textarea {
+  font-family: 'JetBrains Mono', monospace;
+  position: relative;
+  display: block;
   color: hsl(0, 0%, 90%);
   margin: 4%;
   padding-bottom: 4px;
   background-color: transparent;
   border: transparent;
-  border-bottom: hsl(167, 100%, 40%) 2px solid;
-  width: 40vh;
+  border-bottom: hsl(0, 0%, 60%) 2px solid;
+  width: 30vh;
+  overflow: hidden; 
+  resize: none;
+  transition: all 0.2s ease-in-out;
 }
 
 input[type="text"]:focus {
-  border-bottom: hsl(0, 0%, 90%) 2px solid;
-
+  border-bottom: hsl(167, 100%, 40%) 2px solid;
   outline: none;
-} 
+  scale: 1.05;
+}
+
+textarea:focus {
+  text-align: left;
+  border-bottom: hsl(167, 100%, 40%) 2px solid;
+  outline: none;
+  scale: 1.05;
+}
 
 input[type="button"] {
+  box-shadow: 0 0 0 2em rgba(#fff,0);
+  font-family: 'JetBrains Mono', monospace;
   position: relative;
-  color: hsl(0, 0%, 90%);
-  border: none;
+  color: hsl(0, 0%, 60%);
   font-weight: bold;
   font-size: larger;
-  padding: 8px;
+  padding: 4px;
   border-radius: 10px;
+  border: hsl(0, 0%, 60%) 2px solid;
   background-color: hsl(0, 5%, 13%);
   width: 6em;
+  transition: border 0.1s ease-in-out, border-radius 0.2s ease-in-out, scale 0.3s ease-in-out;
+}
+
+@keyframes hue {
+  from {
+    filter: hue-rotate(0deg);
+  }
+
+  to {
+    filter: hue-rotate(360deg);
+  }
 }
 
 input[type="button"]:hover {
   cursor: pointer;
-  background-color: hsl(207, 100%, 100%);
-  color: hsl(0, 5%, 13%);
+  color: hsl(0, 0%, 90%);
+  border: hsl(167, 100%, 40%) 2px solid;
+  border-radius: 8px;
+  scale: 1.1;
+  animation: end;
+  animation: hue 4s both infinite;
 }
 
 input[type="button"]:active {
   color: hsl(210, 100%, 50%);
+  animation: end;
 }
