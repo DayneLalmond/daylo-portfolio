@@ -22,12 +22,8 @@ function Connect() {
 
         </div>
         <h4 className="study">Study with me</h4>
-        <p className="second-p"><b>J</b>oin me in web development research. Enter your slack username to request joining my slack study group <b>"SSG"</b>. Your 
-        username is captured via webhook and sent to the slack server. Once accepted, remember to introduce yourself.</p>
-        <form className="study" id="study-group">
-          <input type="text" placeholder="Username" />
-          <input type="button" value="Study" />
-        </form>
+        <p className="second-p"><b>J</b>oin me in web development research. My slack study group <b>"SSG"</b> is a public community for anyone to join. 
+        Check out the channel topics available, you may find one fit for your studies. Remember to introduce yourself, and be polite.</p>
       </section>
     </main>
   );

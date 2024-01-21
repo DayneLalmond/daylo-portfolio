@@ -424,13 +424,6 @@ ul {
   left: 1vh;
 }
 
-#study-group input[type="button"] {
-  position: relative;
-  display: block;
-  margin: 6vh;
-  left: -2vh;
-}
-
 input[type="text"],
 textarea {
   font-family: 'JetBrains Mono', monospace;
@@ -442,7 +435,7 @@ textarea {
   background-color: transparent;
   border: transparent;
   border-bottom: hsl(0, 0%, 60%) 2px solid;
-  width: 30vh;
+  width: 36vh;
   overflow: hidden; 
   resize: none;
   transition: all 0.2s ease-in-out;
